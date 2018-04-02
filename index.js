@@ -23,6 +23,9 @@ let Portal = {
     const { hasMounted } = this
     const { portalElement } = this.$refs
     const data = {
+      attrs: {
+        role: 'portal'
+      },
       style: {
         display: portalElement ? undefined : 'none'
       },

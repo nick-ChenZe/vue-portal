@@ -41,6 +41,7 @@ The template above will render as below, and you can control the condition rende
 <div class="parentA">
   <button>hide</button>
 </div>
-<button class="classA" data-custom="any">content button</button>
-
+<div role="portal" class="classA" data-custom="any">
+  <button>content button</button>
+</div>
 ```
