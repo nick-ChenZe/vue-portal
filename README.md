@@ -5,11 +5,11 @@
 ## Installation
 
 ```bash
-npm i vue-portal
+npm i v-portal
 ```
 
 ```js
-import Portal from 'vue-portal'
+import Portal from 'v-portal'
 Vue.use(Portal)
 ```
 
