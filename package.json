@@ -1,0 +1,23 @@
+{
+  "name": "vue-portal",
+  "version": "0.1.0",
+  "description": "A Portal Component for Vuejs, inspired by React.createPortal",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-ChenZe/vue-portal.git"
+  },
+  "keywords": [
+    "vuejs",
+    "portal"
+  ],
+  "author": "nick-ChenZe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nick-ChenZe/vue-portal/issues"
+  },
+  "homepage": "https://github.com/nick-ChenZe/vue-portal#readme"
+}
