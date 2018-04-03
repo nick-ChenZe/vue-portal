@@ -27,6 +27,7 @@
     "babel-preset-env": "^1.6.1",
     "jest": "^22.4.3",
     "jest-serializer-html": "^5.0.0",
+    "sinon": "^4.5.0",
     "vue": "^2.5.16",
     "vue-jest": "^2.3.0",
     "vue-template-compiler": "^2.5.16"
@@ -38,6 +39,7 @@
   },
   "dependencies": {},
   "jest": {
+    "verbose": true,
     "moduleFileExtensions": [
       "js",
       "vue"

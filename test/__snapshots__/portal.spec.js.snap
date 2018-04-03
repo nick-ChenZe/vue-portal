@@ -1,25 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should not render portal component correctly 1`] = `
+
+<div class="parent">
+</div>
+<div role="portal"
+     style="display: none;"
+     data-custom="any"
+     class="classA"
+>
+  <button>
+    content button
+  </button>
+</div>
+
+`;
+
 exports[`should render portal component correctly 1`] = `
 
 <div class="parent">
-  <button>
-    hide
-  </button>
-  <div role="portal"
-       class="pt-button classA"
-       data-custom="any"
-  >
-    <button>
-      content button
-    </button>
-    <button>
-      <div role="portal"
-           class="pt-button"
-      >
-      </div>
-    </button>
-  </div>
 </div>
 
 `;

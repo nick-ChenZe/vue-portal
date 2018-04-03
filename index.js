@@ -22,7 +22,6 @@ let Portal = {
   },
 
   render(h) {
-    const { hasMounted } = this
     const { portalElement } = this.$refs
     const data = {
       attrs: {

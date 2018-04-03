@@ -1,9 +1,13 @@
 <template>
   <div class="parent">
-    <button @click="isShow = !isShow">{{ isShow ? 'hide' : 'show' }}</button>
-    <Portal v-if="isShow" class="classA" data-custom="any">
-      <button>content button<button>
-    <Portal/>
+    <Portal 
+      v-if="isHide"
+      ref="portal" 
+      class="classA" 
+      data-custom="any" 
+      :onChildrenMount="onChildrenMount">
+      <button>content button</button>
+    </Portal>
   </div>
 </template>
 
@@ -11,8 +15,12 @@
 import Portal from '../index'
 export default {
   components: { Portal },
-  data() {
-    return { isShow: true }
+  props: {
+    onChildrenMount: {
+      type: Function,
+      default: () => {}
+    },
+    isHide: Boolean
   }
 }
 </script>
