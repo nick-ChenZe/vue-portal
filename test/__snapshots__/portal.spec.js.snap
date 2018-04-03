@@ -6,6 +6,20 @@ exports[`should render portal component correctly 1`] = `
   <button>
     hide
   </button>
+  <div role="portal"
+       class="pt-button classA"
+       data-custom="any"
+  >
+    <button>
+      content button
+    </button>
+    <button>
+      <div role="portal"
+           class="pt-button"
+      >
+      </div>
+    </button>
+  </div>
 </div>
 
 `;
