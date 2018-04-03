@@ -17,11 +17,10 @@ Vue.use(Portal)
 
 ```html
 <template>
-  <div class="parentA">
-    <button @click="t = !t">{{ t ? 'hide' : 'show' }}</button>
+  <div class="parent">
+    <button @click="isShow = !isShow">{{ isShow ? 'hide' : 'show' }}</button>
     <Portal v-if="isShow" class="classA" data-custom="any">
-      // template you what to render
-      <button><button>
+      <button>content button<button>
     <Portal/>
   </div>
 </template>
@@ -29,7 +28,7 @@ Vue.use(Portal)
 <script>
 export default {
   data() {
-    return { t: true }
+    return { isShow: true }
   }
 }
 </script>

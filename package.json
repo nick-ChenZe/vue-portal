@@ -4,7 +4,7 @@
   "description": "A Portal Component for Vuejs, inspired by React.createPortal",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "NODE_ENV=production ./node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,35 @@
   "bugs": {
     "url": "https://github.com/nick-ChenZe/vue-portal/issues"
   },
-  "homepage": "https://github.com/nick-ChenZe/vue-portal#readme"
+  "homepage": "https://github.com/nick-ChenZe/vue-portal#readme",
+  "devDependencies": {
+    "avoriaz": "^6.3.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3",
+    "jest-serializer-html": "^5.0.0",
+    "vue": "^2.5.16",
+    "vue-jest": "^2.3.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {},
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-html"
+    ]
+  }
 }

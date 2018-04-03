@@ -2,7 +2,10 @@ let Portal = {
   name: 'v-portal',
 
   props: {
-    onChildrenMount: Function
+    onChildrenMount: {
+      type: Function,
+      default: () => {}
+    }
   },
 
   destroy() {
@@ -14,7 +17,6 @@ let Portal = {
     const { portalElement } = this.$refs
     const parent = document.body
     parent.append(portalElement)
-
     this.$forceUpdate()
     this.$nextTick(e => this.onChildrenMount(this.$slots.default))
   },
@@ -39,9 +41,8 @@ let Portal = {
   }
 }
 
-Portal.install = function install (Vue) {
+Portal.install = function install(Vue) {
   Vue.component(Portal.name, Portal)
 }
 
 export default Portal
-

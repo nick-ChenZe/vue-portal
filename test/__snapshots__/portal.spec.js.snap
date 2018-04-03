@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render portal component correctly 1`] = `
+
+<div class="parent">
+  <button>
+    hide
+  </button>
+</div>
+
+`;
