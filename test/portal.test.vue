@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import Portal from '../index'
 export default {
   components: { Portal },
   data() {
