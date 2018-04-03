@@ -1,5 +1,7 @@
 # Vue Portal Component
 
+[![Build Status](https://travis-ci.org/nick-ChenZe/vue-portal.svg?branch=master)](https://travis-ci.org/nick-ChenZe/vue-portal)
+
 > This is a simple component for someone who wants render component outside the DOM structure
 
 ## Installation
