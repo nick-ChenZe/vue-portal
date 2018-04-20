@@ -17,8 +17,9 @@ let Portal = {
     const { portalElement } = this.$refs
     const parent = document.body
     parent.append(portalElement)
+    
     this.$forceUpdate()
-    this.$nextTick(e => this.onChildrenMount(this.$slots.default))
+    this.$nextTick(e => this.onChildrenMount(portalElement))
   },
 
   render(h) {

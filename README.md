@@ -1,8 +1,6 @@
 # Vue Portal Component
 
 [![Build Status](https://travis-ci.org/nick-ChenZe/vue-portal.svg?branch=master)](https://travis-ci.org/nick-ChenZe/vue-portal)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
-
 
 > This is a simple component for someone who wants render component outside the DOM structure
 
